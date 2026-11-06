@@ -1,0 +1,133 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ffb6d9, #ff69b4, #ff1493);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.cartao {
+    background-color: #fff0f7;
+    width: 350px;
+    padding: 35px 25px;
+    border: 3px solid #ff69b4;
+    border-radius: 25px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 8px 25px rgba(150, 0, 80, 0.25);
+}
+
+.badge {
+    background: #ff1493;
+    color: white;
+    padding: 7px 15px;
+    border-radius: 20px;
+    position: absolute;
+    top: -15px;
+    right: 15px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, #ff69b4, #ff1493);
+    border-radius: 50%;
+    margin: 10px auto 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    border: 4px solid white;
+}
+
+#nome {
+    color: #e60073;
+    font-size: 27px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #ff69b4;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.linha {
+    width: 60px;
+    height: 3px;
+    background: #ff1493;
+    margin: 18px auto;
+    border-radius: 5px;
+}
+
+.bio {
+    color: #70445b;
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 22px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.links a {
+    display: inline-block;
+    background-color: #ff69b4;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.links a:hover {
+    background-color: #e60073;
+    transform: scale(1.05);
+}
+
+.frase {
+    color: #e60073;
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 22px;
+}
+
+footer {
+    color: #ff69b4;
+    font-size: 12px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Responsividade */
+
+@media (max-width: 600px) {
+    .cartao {
+        width: 100%;
+        max-width: 350px;
+        padding: 30px 20px;
+    }
+
+    #nome {
+        font-size: 23px;
+    }
+}
